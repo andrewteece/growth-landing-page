@@ -2,7 +2,9 @@
 
 :root {
     --clr-accent-400: hsl(216, 100%, 64%);
+    --clr-accent-600: hsl(0, 0%, 20%);
     --clr-neutral-400: hsl(240, 10%, 96%);
+    --clr-primary-400: hsl(0, 0%, 100%);
     --clr-primary-700: hsl(240, 7%, 8%);
 
     --ff-primary: 'Poppins', sans-serif;
@@ -46,8 +48,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -66,6 +68,10 @@ body {
   /* A elements that don't have a class get default styles */
   a:not([class]) {
     text-decoration-skip-ink: auto;
+  }
+
+  a {
+    text-decoration: none;
   }
   
   /* Make images easier to work with */
@@ -97,5 +103,109 @@ body {
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+  }
+
+  /* GENERAL-BASE STYLES */
+
+  body {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-400);
+    background: var(--clr-primary-400);
+    overflow-x: hidden;
+    color: var(--clr-primary-700);
+  }
+
+  /* NAVIGATION */
+
+  .nav {
+    background: var(--clr-primary-400);
+    padding: 20px;
+  }
+ 
+  .nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main__nav ul {
+    display: flex;
+  }
+
+  .nav ul li a {
+    display: block;
+    padding: .625rem 1.25rem;
+    font-weight: var(--fw-600);
+    transition: 0.5s;
+  }
+
+  .nav ul li a:hover,
+  .nav ul li a:focus {
+    color: var(--clr-accent-400);
+  }
+
+  .nav ul li a i {
+    margin-right: .625rem;
+  }
+
+  .nav ul li:last-child a {
+    margin-left: .625rem;
+  }
+
+  @media (max-width: 40em) {
+    .nav,
+    .main__nav {
+        display: none;
+    }
+  }
+
+  /* UTILITY CLASSES */
+
+  .wrapper {
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 0 .9375rem;
+  }
+
+  .wrapper--sm {
+    max-width: 55rem;
+    margin: 0 auto;
+    max-width: 0 .9375rem;
+  }
+
+  /* COMPONENTS */
+
+  .btn {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    background: var(--clr-neutral-400);
+    color: var(--clr-accent-600);
+    font-weight: var(--fw-600);
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: .625rem;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    opacity: 0.8;
+  }
+
+  .btn-primary {
+    background-color: var(--clr-accent-400);
+    color: var(--clr-neutral-400);
+  }
+
+  .btn-dark {
+    background-color: var(--clr-primary-700);
+    color: var(--clr-neutral-400);
+  }
+
+  .btn-block {
+    display: block;
+    width: 100%;
   }
   
