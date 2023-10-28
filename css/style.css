@@ -226,6 +226,88 @@ body {
     font-weight: var(--fw-600);
   }
 
+  /* PRICING SECTION */
+
+  .pricing .pricing__grid {
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+    gap: 1.875rem;
+    margin-top: 3.125rem;
+  }
+
+  .pricing__card--subheading {
+    margin-bottom: 1.875rem;
+  }
+
+  .pricing__card--price {
+    margin-bottom: 1.875rem;
+    padding: 1.25rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .pricing ul {
+    margin: 1.875rem 0;
+  }
+
+  .pricing ul li {
+    margin-bottom: 1.25rem;
+  }
+
+  .pricing ul li i {
+    margin-right: 1rem;
+  }
+
+  .pricing__footer {
+    margin: 1.875rem 0;
+  }
+
+  /* COMPONENTS */
+
+  .card {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-primary-700);
+    border-radius: .625rem;
+    padding: 1.25rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    background: var(--clr-neutral-400);
+    color: var(--clr-accent-600);
+    font-weight: var(--fw-600);
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: .625rem;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .btn i {
+    margin-right: .625rem;
+  }
+
+  .btn:hover,
+  .btn:focus {
+    opacity: 0.8;
+  }
+
+  .btn-primary {
+    background-color: var(--clr-accent-400);
+    color: var(--clr-neutral-400);
+  }
+
+  .btn-dark {
+    background-color: var(--clr-primary-700);
+    color: var(--clr-neutral-400);
+  }
+
+  .btn-block {
+    display: block;
+    width: 100%;
+  }
+
   /* UTILITY CLASSES */
 
   .wrapper {
@@ -305,50 +387,5 @@ body {
   .spacer {
     margin-bottom: 3rem;
   }
-  /* COMPONENTS */
-
-  .btn {
-    display: inline-block;
-    padding: .75rem 1.25rem;
-    background: var(--clr-neutral-400);
-    color: var(--clr-accent-600);
-    font-weight: var(--fw-600);
-    text-decoration: none;
-    text-align: center;
-    border: none;
-    border-radius: .625rem;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-
-  .btn i {
-    margin-right: .625rem;
-  }
-
-  .btn:hover,
-  .btn:focus {
-    opacity: 0.8;
-  }
-
-  .btn-primary {
-    background-color: var(--clr-accent-400);
-    color: var(--clr-neutral-400);
-  }
-
-  .btn-dark {
-    background-color: var(--clr-primary-700);
-    color: var(--clr-neutral-400);
-  }
-
-  .btn-block {
-    display: block;
-    width: 100%;
-  }
-
-  .card {
-    background-color: var(--clr-primary-400);
-    color: var(--clr-primary-700);
-    border-radius: .625rem;
-    padding: 1.25rem;
-  }
+  
   
