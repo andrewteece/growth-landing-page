@@ -295,7 +295,7 @@ body {
     display: none;
    }
 
-   .faq.faq__group .faq__group--body.open {
+   .faq .faq__group .faq__group--body.open {
     display: block;
    }
 

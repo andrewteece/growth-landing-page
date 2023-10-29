@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const faqContainer = document.querySelector('.faq__content');
 
     faqContainer.addEventListener('click', (e) => {
+
+
+
         const groupHeader = e.target.closest('.faq__group--header');
 
         if (!groupHeader) return;
@@ -32,4 +35,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+}); 
