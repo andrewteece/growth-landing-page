@@ -261,6 +261,70 @@ body {
     margin: 1.875rem 0;
   }
 
+   /* FAQ SECTION */
+
+   .faq {
+    padding: 2.5rem 0;
+   }
+
+   .faq .faq__group {
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+    padding-bottom: 1.25rem;
+   }
+
+   .faq .faq__group .faq__group--header {
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 1.25rem 0;
+   }
+
+   .faq .faq__group .faq__group--header h4 {
+    width: 95%;
+    font-weight: var(--fs-600);
+   }
+
+   .faq .faq__group .faq__group--header i {
+    position: absolute;
+    right: 0;
+    top: 2.7rem;
+    font-size: var(--fs-600);
+    cursor: pointer;
+   }
+
+   .faq .faq__group .faq__group--body {
+    display: none;
+   }
+
+   .faq.faq__group .faq__group--body.open {
+    display: block;
+   }
+
+   .faq ul.faq__menu {
+    max-width: 24rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background:  hsl(0, 0%, 87%);
+    padding: .625rem 1.25rem;
+    border-radius: .625rem;
+    font-weight: var(--fw-600);
+    cursor: pointer;
+   }
+
+   .faq ul.faq__menu li {
+    padding: .625rem 1.25rem;
+    text-align: center;
+    border-radius: .3125rem;
+   }
+
+   .faq ul.faq__menu li.active {
+    background-color: var(--clr-accent-400);
+    color: var(--clr-neutral-400);
+   }
+
+
+
   /* COMPONENTS */
 
   .card {
@@ -334,7 +398,7 @@ body {
   }
 
   .text-xl {
-    font-size: var(--fs-800);
+    font-size: var(--fs-850);
     line-height: 1.2;
     font-weight: var(--fw-500);
     margin: 2.5rem 0 1.25rem;
@@ -348,8 +412,9 @@ body {
 
   .text-md {
     font-size: var(--fs-600);
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 1.25rem 0 .625rem;
+    font-weight: var(--fw-400);
   }
 
   .text-sm {
