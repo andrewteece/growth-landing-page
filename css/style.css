@@ -235,11 +235,11 @@ body {
     margin-top: 3.125rem;
   }
 
-  .pricing__card--subheading {
+  .pricing .pricing__card--subheading {
     margin-bottom: 1.875rem;
   }
 
-  .pricing__card--price {
+  .pricing .pricing__card--price {
     margin-bottom: 1.875rem;
     padding: 1.25rem;
     border-bottom: 1px solid #ccc;
@@ -254,7 +254,7 @@ body {
   }
 
   .pricing ul li i {
-    margin-right: 1rem;
+    margin-right: .8rem;
   }
 
   .pricing__footer {
