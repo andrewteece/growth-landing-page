@@ -163,54 +163,7 @@ body {
     }
   }
 
-  /* HAMBURGER MENU */
   
-  .hamburger-button {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: .625rem;
-    z-index: 1000;
-  }
-
-  .hamburger-button .hamburger-line {
-    width: 1.875rem;
-    height: .1875rem;
-    background: var(--clr-accent-600);
-    margin: .375rem 0;
-  }
-
-  /* MOBILE NAV */
-
-  .mobile__nav {
-    position: fixed;
-    top: 0;
-    right: -18.75rem;
-    width: 15.625rem;
-    height: 100%;
-    z-index: 100;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: right 0.3s ease-in-out;
-  }
-
-  .mobile__nav.active {
-    right: 0;
-  }
-
-  .mobile__nav ul {
-    margin-top: 6.25rem;
-    padding-right: .625rem;
-  }
-
-  .mobile__nav ul li {
-    margin: .625rem 0;
-  }
-
-  .mobile__nav ul li a {
-    font-size: var(--fs-600);
-    transition: 0.3s;
-  }
 
   /* HERO SECTION */
 
@@ -552,5 +505,129 @@ body {
   .spacer {
     margin-bottom: 3rem;
   }
+
+  /* HAMBURGER MENU */
+  
+  .hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: .625rem;
+    z-index: 1000;
+  }
+
+  .hamburger-button .hamburger-line {
+    width: 1.875rem;
+    height: .1875rem;
+    background: var(--clr-accent-600);
+    margin: .375rem 0;
+  }
+
+  /* MOBILE NAV */
+
+  .mobile__nav {
+    position: fixed;
+    top: 0;
+    right: -18.75rem;
+    width: 15.625rem;
+    height: 100%;
+    z-index: 100;
+    background: var(--clr-primary-400);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+  }
+
+  .mobile__nav.active {
+    right: 0;
+  } 
+
+  .mobile__nav ul {
+    margin-top: 6.25rem;
+    padding-right: .625rem;
+  }
+
+  .mobile__nav ul li {
+    margin: .625rem 0;
+  }
+
+  .mobile__nav ul li a {
+    font-size: var(--fs-600);
+    transition: 0.3s;
+  }
+
+  @media (max-width: 60rem) {
+    .text-xxl {
+        font-size: 2.5rem;
+    }
+  }
+
+@media (max-width: 41rem) {
+    .nav .main__nav {
+        display: none;
+    }
+
+     .nav .hamburger-button {
+        display: block;
+    }
+
+    .hero .wrapper {
+        background: url(../images/hero-bg-mobile.png) no-repeat;
+        background-size: 21.875rem 25rem;
+        background-position: bottom;
+        height: 48.125rem;
+    }
+
+    .hero .hero__content,
+    .hero .hero__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .hero--buttons .btn {
+        margin-bottom: .625rem;
+        display: block;
+        width: 100%;
+    }
+
+    .testimonials .testimonials__heading {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .testimonials .testimonials__grid,
+    .pricing .pricing__grid,
+    .faq,
+    .footer .footer__grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .footer .card {
+        margin-right: 0;
+    }
+
+    .footer .footer__grid > div {
+        text-align: center;
+    }
+
+    .text-xl {
+        font-size: var(--fs-750);
+    }
+
+    .text-lg {
+        font-size: var(--fs-650);
+    }
+
+    .text-md {
+        font-size: var(--fs-400);
+    }
+}
+
+@media (max-width: 31.25rem) {
+    .text-xxl {
+        font-size: 2rem;
+    }
+}
   
   
