@@ -156,15 +156,6 @@ body {
     margin-left: .625rem;
   }
 
-  @media (max-width: 40em) {
-    .nav,
-    .main__nav {
-        display: none;
-    }
-  }
-
-  
-
   /* HERO SECTION */
 
   .hero {
@@ -582,6 +573,10 @@ body {
     .hero .hero__text {
         width: 100%;
         text-align: center;
+    }
+
+    .hero--buttons {
+      flex-wrap: wrap;
     }
 
     .hero .hero--buttons .btn {
